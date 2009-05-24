@@ -1,0 +1,82 @@
+#!/bin/bash
+
+. ~/bin/doctable
+enPREFIX=/home/zhangle/gentoo/xml/htdocs/doc/en
+cnPREFIX=/var/www/localhost/htdocs/doc/zh_cn
+
+todaydate=$(date +%Y/%m/%d)
+
+for i in `grep -o '/doc/en/handbook/.*\.xml' progress.xml`
+do
+i=${i/\/doc\/en\///}
+
+enolddate=$(grep -A 1 /doc/en$i progress.xml | egrep -o 200[0-9]/[0-9]\{2\}/[0-9]\{2\}) 
+ennewdate=$(getdate $enPREFIX$i)
+cnoldver=$(grep "/doc/zh_cn$i" progress.xml | egrep -o "v [0-9]\.[0-9]+")
+enoldver=$(grep "/doc/en$i" progress.xml | egrep -o "v [0-9]\.[0-9]+")
+
+j=${i//\//\\\/}
+
+# new en doc from cvs
+if [[ $enolddate != $ennewdate ]]; then
+echo /doc/zh_cn$i "old:"$enolddate "new:"$ennewdate
+
+sed -i -e "
+/\/doc\/en$j/ { 
+N
+s#$i.*\n    <ti>200[0-9]/[0-9]\{2\}/[0-9]\{2\}#$i\">$(getver $enPREFIX$i)</uri></ti>\n    <ti>$ennewdate# 
+N
+N
+/<ti>T<\/ti>/ {
+N
+s#<ti>T</ti>\n    <ti>200[0-9]/[0-9]\{2\}/[0-9]\{2\}</ti>#<ti>W</ti>\n    <ti></ti>#
+}
+} " progress.xml
+fi
+
+# en doc newer than cn doc
+if [[ x$cnoldver != x ]] && [[ $enoldver != $cnoldver ]]; then
+echo /doc/zh_cn$i "en:"$enoldver "cn:"$cnoldver
+
+sed -i -e "
+/\/doc\/en$j/ { 
+N
+N
+N
+/<ti>T<\/ti>/ {
+N
+s#<ti>T</ti>\n    <ti>200[0-9]/[0-9]\{2\}/[0-9]\{2\}</ti>#<ti>W</ti>\n    <ti></ti>#
+}
+} " progress.xml
+fi
+
+# new cn doc is ready
+if [[ -f $cnPREFIX$i ]]; then
+	cnnewver=$(getver $cnPREFIX$i)
+else
+	continue
+fi
+
+if [[ $cnoldver != $cnnewver ]]; then
+echo /doc/zh_cn$i $cnoldver $cnnewver
+
+sed -i -e "
+/\/doc\/en$j/ {
+N
+N
+N
+/<ti>[WRT]<\/ti>/ {
+N
+s#<ti>.</ti>\n    <ti>.*</ti>#<ti>T</ti>\n    <ti>$todaydate</ti>#
+N
+N
+N
+/\/doc\/zh_cn$j/ {
+s#/doc/zh_cn$i.*\n    <ti>.*</ti>#/doc/zh_cn$i\">$cnnewver</uri></ti>\n    <ti>$todaydate</ti>#
+}
+}
+} " progress.xml
+
+fi
+
+done

@@ -1,0 +1,4 @@
+#!/bin/bash
+find -name '*.py' -o -name '*.c' -o -name '*.cpp' -o -name '*.h' > cscope.files
+cscope -b -q
+CSCOPE_DB=cscope.out; export CSCOPE_DB

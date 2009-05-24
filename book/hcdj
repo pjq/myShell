@@ -1,0 +1,21 @@
+#!/bin/bash
+
+rm $2.txt
+
+echo
+echo "START"
+
+wget -r -l 1 -A "*.htm" -p -q -nd $1
+cat *.htm | grep "<\/P><P>" >> $2.txt
+rm *.htm
+
+sed -i 's/<P>//g' $2.txt
+sed -i 's/<\/P>/\
+/g' $2.txt
+sed -i 's/<BR>/\
+/g' $2.txt
+sed -i 's/\&nbsp;//g' $2.txt
+sed -i 's/<[^<]*>//g' $2.txt
+
+
+echo "END"

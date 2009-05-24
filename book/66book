@@ -1,0 +1,18 @@
+#!/bin/bash
+
+rm $2.txt
+echo 
+echo "START"
+
+wget -r -l 1 -A "read.asp*" -p -q -nd $1
+cat read.asp* >> $2.txt
+rm read.asp*
+cat $2.txt | grep "<br />" >> $2
+mv $2 $2.txt
+
+sed -i 's/<[^<]*>//g' $2.txt
+sed -i '/\&nbsp;/d' $2.txt
+sed -i '/Copyright/d' $2.txt
+sed -i '/document/d' $2.txt
+
+echo "END"

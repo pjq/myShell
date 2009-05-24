@@ -1,0 +1,19 @@
+#!/usr/bin/python
+import sys
+sys.path.insert(0, "/home/zhangle/portage-source/pym/")
+sys.path.insert(0, "/home/zhangle/portage-source/pym/portage")
+import _emerge
+
+settings, trees, mtimedb = _emerge.load_emerge_config()
+portdb = trees[settings["ROOT"]]["porttree"].dbapi
+
+# return a list of all cpv
+#print portdb.cpv_all()
+
+# list all categories
+#print portdb.categories
+
+## list all cpv
+#for item in portdb.cp_all():
+#	for cpv in portdb.cp_list(item):
+#		print cpv

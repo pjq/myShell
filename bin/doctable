@@ -1,0 +1,56 @@
+#!/bin/bash
+getpath() {
+	grep Header $1 | grep -o handbook.*\.xml
+}
+getver() {
+	grep -o 'Header.*v 1.[0-9]\+' $1 | sed 's/^.*v \(.*\)/\1/'
+}
+getversion() {
+	grep -o '<version>.*</version>' $1 | sed 's/<version>\(.*\)<\/version>/\1/'
+}
+
+setver() {
+	sed -i -e "s/\(English CVS version: \)[0-9]\+\.[0-9]\+/\1$2/" $1
+}
+setversion() {
+	sed -i -e "s/\(<version>\).*\(<\/version>\)/\1$2\2/" $1
+}
+
+setdate() {
+	sed -i -e "s/\(<date>\).*\(<\/date>\)/\1$(date +%Y-%m-%d)\2/" $1
+}
+
+getver_cn() {
+	local file=$(echo ${1#../} | sed -e 's/+amd64//g')
+	if [[ -f ~/gentoo-doc/zh_cn/handbook/$file ]]; then
+		grep Header ~/gentoo-doc/zh_cn/handbook/$file | egrep -o 'v [0-9]+\.[0-9]+'
+	else
+		grep Header $1 | egrep -o 'v [0-9]+\.[0-9]+'
+	fi
+}
+
+getdate() {
+	 grep Header $1 | egrep -o '200[0-9]/[0-9]{2}/[0-9]{2}'
+}
+	
+table() {
+	while [[ $# -gt 0 ]]; do
+		echo "  <tr>"
+		echo "    <ti>${1#../}</ti>"
+		echo "    <ti><uri link=\"/doc/en/$(getpath $1)\">$(getver $1)</uri></ti>"
+		echo "    <ti>$(getdate $1)</ti>"
+		echo "    <ti><mail link=\"\">尚未分配</mail></ti>"
+		echo "    <ti>U</ti>"
+		echo "    <ti>N/A</ti>"
+		echo "    <ti><mail link=\"\">尚未分配</mail></ti>"
+		echo "    <ti><uri link=\"/doc/zh_cn/$(getpath $1| sed -e 's/+amd64//')\">$(getver_cn $1)</uri></ti>"
+		echo "    <ti>N/A</ti>"
+		echo "  </tr>"
+		shift
+	done
+}
+
+#table index.xml
+#table $1
+#table `grep include $1| grep -E -o hb-install.*\.xml`
+#table `grep include handbook-x86.xml| grep -E -o \(hb\|\.\./\).*\.xml`

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd $HOME/gentoo/xml/htdocs
+cvs up -l . ./css ./doc ./dtd ./rdf ./xsl ./main ./news ./proj ./errors ./foundation ./security ./search
+cvs up -d ./doc/en ./doc/zh_cn ./rdf/en ./main/en  ./main/zh_cn ./news/en ./news/zh_cn ./proj/en ./proj/zh_cn ./errors/en ./foundation/en ./security/en

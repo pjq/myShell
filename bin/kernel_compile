@@ -1,0 +1,17 @@
+#!/bin/sh
+KBUILD_OUTPUT=/var/tmp/kernel_build
+sudo rm -rf ${KBUILD_OUTPUT}
+mkdir ${KBUILD_OUTPUT}
+cd ${KBUILD_OUTPUT}
+if grep '/boot' /etc/fstab && ! grep '/boot' /etc/mtab; then
+	sudo mount /boot
+fi
+cp /boot/config .config
+make -C /usr/src/linux O=${KBUILD_OUTPUT} oldconfig
+echo -n "make menuconfig? [Y/n]:"
+read yes
+if [[ "x$yes" == xy || "x$yes" == x ]]
+then
+	make O=${KBUILD_OUTPUT} menuconfig
+fi
+make && sudo sh -c "make install && make modules_install && umount /boot"

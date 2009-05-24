@@ -1,0 +1,60 @@
+#!/bin/sh
+
+OLDDIR=$PWD
+
+if [ -z $1 ] || [ -z $2 ]
+then
+	echo "usage: "${0}" in.mpg out.gif"
+	exit	
+fi
+
+DIR=/tmp/${2/.gif/}
+
+
+if [ -d ${DIR} ]
+then
+	echo "${DIR} already exists, exiting"
+	exit
+else
+	mkdir ${DIR} 
+	echo $PWD
+fi
+
+cd ${DIR}
+
+echo "generating jpeg files from $OLDDIR/$1"
+if ! mplayer "$OLDDIR"/"$1" -vo jpeg > /dev/null 2>&1
+then
+	echo "jpeg generation failed"
+fi
+
+if ! ls 0*.jpg 
+then
+	echo "failed generating jpep files"
+	exit
+fi
+
+# remove even numbered files
+TAIL=`ls | tail -n 1 | sed -e 's/\.jpg//g'`
+rm `seq -f %08.f 2 2 $TAIL | sed -e 's/.*/&.jpg/g'`
+
+
+for i in 0*.jpg
+do 
+	echo "converting "${i}" to "${i/jpg/gif}
+	convert ${i} ${i/jpg/gif};
+done
+
+echo "generating gif"
+gifsicle -O2 --resize 256x_ -i --colors 256 -d 5 --loopcount 0*.gif > ${HOME}/"$2"
+
+if [ $? -ne 0 ]
+then
+	echo "failed generating gif"
+	exit
+fi
+
+cd ..
+rm -rf ${DIR}
+
+echo "done"

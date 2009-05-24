@@ -1,0 +1,57 @@
+#!/bin/bash
+getpath() {
+	grep -o org\/.*\.xml <<<$1 | sed -e 's/^org\///'
+}
+
+getpath_zh_cn() {
+	sed -e 's,/en/,/zh_cn/,' <<<$1
+}
+
+getver() {
+	local ret=$(grep Header $1 | egrep -o 'v [0-9]+\.[0-9]+')
+	if [[ -z $ret ]]; then
+		ret=$(basename $1);
+	fi
+	echo -n $ret;
+}
+
+getdate() {
+	 grep Header $1 | egrep -o '200[0-9]/[0-9]{2}/[0-9]{2}'
+}
+
+getnick() {
+	local list=$HOME/list
+	grep "^$1" $list | awk -F" " '{ print $2; }'
+}
+
+
+getmail() {
+	local texfile=$HOME/pdf/gentoo_adr.tex
+	local user=$(getnick $1)
+	grep "^      ${user/_/\\\\_}" $texfile | awk -F'&' '{print $4;}' | tr -d [:space:]
+}
+	
+table() {
+	local file;
+	while [[ $# -gt 0 ]]; do
+		file=$(getpath $1)
+		echo "  <tr>"
+		echo "    <ti>`basename $file`</ti>"
+		echo "    <ti><uri link=\"/$file\">$(getver $file)</uri></ti>"
+		echo "    <ti>$(getdate $file)</ti>"
+		echo "    <ti><mail link=\"$(getmail $1)\">$(getnick $1)</mail></ti>"
+		echo "    <ti>W</ti>"
+		echo "    <ti>N/A</ti>"
+		echo "    <ti><mail link=\"r0bertz@gentoo.org\">r0bertz</mail></ti>"
+		echo "    <ti><uri link=\"/$(getpath_zh_cn $file)\"></uri></ti>"
+		echo "    <ti>N/A</ti>"
+		echo "  </tr>"
+		shift
+	done
+}
+
+#table index.xml
+#table $1
+#table `grep include $1| grep -E -o hb-install.*\.xml`
+#table `grep include handbook-x86.xml| grep -E -o \(hb\|\.\./\).*\.xml`
+#table $(cat $HOME/list | cut -d " " -f 1) 

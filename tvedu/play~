@@ -1,0 +1,28 @@
+#!/bin/bash
+##Copyright (c) 2008  percy (pengjianqing@sina.com)
+#Ctreated date:2008年 04月 03日 星期四 22:07:49 CST
+#License: GPLv3
+#The tv list is from:www.tv.edu.cn,and I get it with the firefox plugin:MediaPlayerConnectivity{0.8.3}.xpi by hand;
+#you can run like this:./play
+#then it will show the tv list in file tvedu.list,and input the tv number,
+#now the mplayer will play the mms URL.Enjoy youself~!!~
+#Of course,you can add some avaliable mms URL into the file tvedu.list
+#PLEASE MAKE SURE YOU HAVE INSTALLED MPLAYER AND  JUST ONE "BLANK" BETWEEN THE TV NAME AND THE mms URL IN THE FILE tvedu.list.
+#path=~/shell/tvedu/ #the path of the file:tvedu.list
+path=$PWD/
+echo $path
+echo "tv.edu list:"
+list=`cat ${path}tvedu.list|cut -d " " -f1`
+echo "$list">${path}list1
+cat ${path}list1|grep -n "">${path}list2
+cat ${path}list2
+
+
+echo "please input the tv nomber"
+echo -n "tv:"
+read tv
+tv=`grep $tv: ${path}list2|cut -d ":" -f2|head -n 1`
+tv=`grep "$tv" ${path}tvedu.list |cut -d " " -f2`
+echo "you are going to play tv:$tv"
+rm ${path}list*
+mplayer $tv 

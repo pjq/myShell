@@ -1,0 +1,20 @@
+#/bin/bash
+
+rm $2.txt
+echo
+echo "START"
+
+wget -r -l 1 -A "*.html,*.shtml" -p -q -nd $1
+rm *.html
+cat *.shtml >> $2.txt
+rm *.shtml
+
+cat $2.txt | grep "<br>" > $2
+mv $2 $2.txt
+
+sed -i 's/<br>/\
+/g' $2.txt
+sed -i 's/<[^<]*>//g' $2.txt
+sed -i 's/\&nbsp;//g' $2.txt
+
+echo "END"

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm $2.txt
+
+echo
+echo "START"
+
+wget -r -l 1 -A "bbsanc*" -p -q -nd $1
+cat *.A >> $2.txt
+rm *.A
+
+sed -i 's/\&nbsp;//g' $2.txt
+sed -i 's/<[^<]*>//g' $2.txt
+sed -i '/^$/d' $2.txt
+
+echo "END"

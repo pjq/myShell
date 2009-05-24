@@ -1,0 +1,31 @@
+#! /bin/sh
+# ${parameter:-word} 
+#					if parameter isn't set, expand to "word"
+# ${parameter:=word} 
+#					if parameter isn't set, expand to "word", parameter is set to "word"
+# ${parameter:?word} 
+#					if parameter isn't set, report error msg "word", script will exit
+# ${parameter:+word}
+#					if parameter is set, expand to "word"	
+
+
+A=set
+B=set
+C=set
+D=set
+
+echo 'A=set	${A:-a}='${A:-a}
+echo 'B=set	${B:=b}='${B:=b}', ${B}='${B}
+echo 'D=set	${D:+d}='${D:+d}
+echo 'C=set	${C:?error}='${C:?error}
+
+echo 
+
+A=
+B=
+C=
+D=
+echo 'A=	${A:-a}='${A:-a}
+echo 'B=	${B:=b}='${B:=b} ', ${B}='${B}
+echo 'D=	${D:+d}='${D:+d}
+echo 'C=	${C:?error}='${C:?error}

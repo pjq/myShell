@@ -1,0 +1,685 @@
+<!--STATUS OK--><!--resnum:23-->
+<html>
+<head>
+<META content="text/html;charset=gb2312" http-equiv=Content-Type>
+<title>百度MP3搜索_sweetdream        </title>
+<style>
+<!--
+body,td{font-family:arial}
+td{font-size:12px;font-family:Arial;line-height:18px}
+img{border:0}
+.p14{font-size:14px}
+#leftRes{padding-left:10px;margin:0;width:74%!important;width:76%;}
+.dBlue{background:#CDEAF6;clear:both;height:60px;width:100%;margin:10px 0;padding:0}
+.t{border-bottom:1px solid #e1e1e1;height:28px;padding-left:6px}
+.d{font-size:14px;border-bottom:1px solid #e1e1e1;height:28px;padding-left:6px}
+.grayTB{background:#FFF9E1}
+.pb{font-weight:600}
+.lh24 {LINE-HEIGHT:24px}
+.formfont{FONT-SIZE:16px;FONT-FAMILY:Arial}
+.Tit a{COLOR:#00c}
+.p3{FONT-SIZE:13px;LINE-HEIGHT:24px}
+.b{width:48px;height:7px;background:#e9e9e9}
+.bi{background:#CDEAF6;height:20px;margin-bottom:12px}
+.i{font-size:16px;font-family:arial}
+.Tit{height:21px;font-size:14px}
+.htb{margin-bottom:5px}
+.c{color:#77C}
+.g{color:#666}
+.pg{font-size:14px;word-spacing:4px;text-align:center;line-height:30px}
+.pg font{font-size:16px}
+#ft{clear:both;line-height:20px;text-align:center}
+#ft,#ft *{color:#77C;font-size:12px;font-family:Arial}
+#Tbs{width:100%;margin:0;background:#fff}
+#Tbs td{border-bottom:1px solid #e1e1e1;height:30px;padding:2px 0 2px 10px;word-break:keep-all}
+#Tbs td.d{font-size:14px;word-break:break-all}
+#Tbs td.al{word-break:break-all}
+#Tbs span{color:#e10900}
+#Tbs th{font-size:12px;background:#DDEDF4;line-height:16px;height:28px;border-bottom:1px solid #e1e1e1;padding:2px 0 2px 10px;text-align:left}
+.tdn{width:70px;vertical-align:top;padding:5px auto 0}
+body{margin:6px 0 0;color:#000}
+a {color:#03c}
+#sm{font-size:12px;color:#666;}
+#sm a{color:#666}
+#rightAd{margin-top:-3px;right:0;z-index:0!important;z-index:-1;top:95px;}
+.spd{text-align:center}
+.spd img{width:46px}
+#DivMv{background:aliceblue;padding:10px 10px 0;margin-top:5px}
+#DivMv table{width:96%}
+#DivMv td{background:url(http://img.baidu.com/img/head.gif) top center no-repeat;height:100px;margin:0;text-align:center;color:#999;font-size:10px}
+#DivMv a{font-size:12px}
+#DivMv td p{margin:5px auto 0px auto;padding:0;overflow:hidden;height:17px;width:128px;}
+#DivMv b{font-weight:100;color:#c00}
+#DivMv td img{margin-top:13px;height:96px;width:128px}
+#DivMv #vi {display:none}
+h6{font-size:14px;margin:35px 0px 0;padding:0}
+h6 a{font-size:14px;font-weight:100}
+-->
+</style> 
+<script>
+if(window.name=='nw'){window.name=''}
+if(top.location!==self.location){top.location=self.location}
+function ga(o,e)
+{
+	if (document.getElementById)
+	{
+		a=o.id.substring(1); p="";r="";g=e.target;
+		if(g){t=g.id;f=g.parentNode;if(f){p=f.id;h=f.parentNode;if(h)r=h.id}}
+		else{h=e.srcElement;f=h.parentNode;if(f) p=f.id;t=h.id}
+		if (t==a || p==a || r==a) return true;
+		window.open(document.getElementById(a).href,'_blank')
+	}
+}
+function h(obj,url){obj.style.behavior='url(#default#homepage)';obj.setHomePage(url)}
+
+function ow(ev,obj) 
+{
+	var ev=window.event||ev;
+	ev.returnValue=false;
+	return wo(obj.href,520,165,1,1);
+}
+function ot(ev,obj,lrcID) 
+{
+	var ev=window.event||ev;
+	ev.returnValue=false;
+	var isFF=!document.all;
+	var re=new RegExp("^[0-9]+$");
+	if(lrcID!=null&&!isFF)
+	{
+		var d=lrcID.match(re);
+		if(d&&parseInt(lrcID)>0){return wo(obj.href,384,542,0,1)}
+	}
+	return wo(obj.href,384,220,0,1);
+}
+function or(ev,obj) {
+	var ev=window.event||ev;
+	ev.returnValue=false;
+	return wo(obj.href,465,265,1,0);
+}
+function wo(url,w,h,m,s)
+{
+	var left=(screen.width-w)/2;
+	var top=m?(screen.height-h)/2:0;
+	window.open(url,'','width='+w+',height='+h+',top='+top+',left='+left+',scrollbars=0,resizable=0,status='+s);
+	return false;
+}
+</script>
+<script src="http://eiv.baidu.com/other/ff.js"></script>
+</head>
+<body onload="document.f1.reset()">
+<table width="100%" border=0 align=center cellpadding=0 cellspacing=0 class=htb>
+<form name=f1 target="_self" action="http://mp3.baidu.com/m" onsubmit="return syn(this)">
+<input type=hidden name=f value=ms>
+<input type=hidden name=tn value="baidump3">
+<input type=hidden name=ct value=134217728>
+<input type=hidden name=lf>
+<input type=hidden name=rn>
+	<tr>
+		<td valign=top style="padding-left:8px;width:137px" nowrap><a href=http://mp3.baidu.com><img src="http://img.baidu.com/img/mp3-jg.gif" width=137 height=46 alt="到百度MP3首页"></a></td><td>&nbsp;&nbsp;&nbsp;</td>
+		<td width="100%" valign=top>
+			<div class=Tit><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=sweetdream&t=12" class=top>新闻</a>&nbsp;&nbsp;&nbsp;<a href="http://www.baidu.com/s?cl=3&wd=sweetdream&t=12">网页</a>&nbsp;&nbsp;&nbsp;<a href="http://tieba.baidu.com/f?kw=sweetdream&t=12">贴吧</a>&nbsp;&nbsp;&nbsp;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=sweetdream&fr=mp3t">知道</a>&nbsp;&nbsp;&nbsp;<b>MP3</b>&nbsp;&nbsp;&nbsp;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&word=sweetdream&t=12">图片</a>&nbsp;&nbsp;&nbsp;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=6&word=sweetdream" class="top" >视频</a></div>
+			<table border=0 cellspacing=0 cellpadding=0>
+				<tr>
+					<td valign=top nowrap><input class=i size=42 name=word value="sweetdream">&nbsp;<input type=submit value=百度一下> <input type=button value=歌词搜索 onclick=g(f1)>&nbsp;&nbsp;&nbsp;</td>
+					<td valign="middle" nowrap><a href=http://www.baidu.com/search/mp3_help.html target="_blank" class=top>帮助</a></td>
+				</tr>
+			</table>
+			<label for="video"> <input name=lm type=radio value="" id="video">视频</label>
+			<label for="aW"><input name=lm type=radio id="aW" value=-1>歌词</label> 
+			<label for="aM"><input name=lm type=radio value=-1 id="aM" checked>全部音乐</label>
+			<label for="Mp3"><input name=lm type=radio value=0 id="Mp3" >mp3</label>
+			<label for="RM"><input name=lm type=radio value=1 id="RM" >rm</label>
+			<label for="WMA"><input name=lm type=radio value=2 id="WMA" >wma</label>
+			<label for="Else"><input name=lm type=radio value=32767  id="Else" >其它格式</label>
+			<label for="Ring"> <input name=lm type=radio value=-1 id="Ring">铃声</label>
+			<label for="Song"><input name=lm type=radio id="Song" value=-1>彩铃</label>
+		</td>
+	</tr>
+</form>
+</table>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="bi">
+<tr>
+  <td nowrap>&nbsp;&nbsp;&nbsp;<a onClick="h(this,'http://www.baidu.com')" href="#" style="color:#000000 ">把百度设为首页</a></td>
+  <td align="right" nowrap>百度一下，找到相关结果23篇，用时0.004秒&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</table>
+
+<!-- 广告 -->
+<div style="margin:0 9px" id="dMA">
+
+<script>if (typeof(cf)=="function") {cf("http://eiv.baidu.com/maimg/20080311/1098111640.swf","760","90","http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD3P1mLFMIGujYkFhVGujYkFhqsULnqniuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbuvQhF9pywdQhPEUiRzwBuougbqPH04mvP9PhwhPvNWuWc4nhD4nhRdnjw9nWTYPjPWnjfhTv3qPWRhT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqniubIjd8iAP1Rj78ndKJPbk8Ts","0");}</script>
+
+</div>
+<script>
+maString=document.getElementById('dMA').innerHTML;
+maString=maString.replace(/(^\s*)|(\s*$)/g,"");
+if(maString==""){document.getElementById('dMA').style.display = "none"}
+window.onload=function()
+{
+        var ra=document.getElementById("rightAd");
+        ra.style.position="absolute";
+        if(window.screen.width>800){
+                if(ra.innerHTML.length>1&&maString!="") ra.style.top="294px";
+                else if(maString=="") ra.style.top="201px";
+        }
+}
+</script>
+<!-- 广告结束 -->
+<table cellspacing="0" cellpadding="0">
+	<tr>
+		<td><table>
+
+<tr><td width=6>&nbsp;</td>
+
+<td style="font-size:14px;vertical-align:top;width:190px;"><div style="width:188px;height:1.2em;overflow:hidden"><a href="http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD3PWfkFMIGujYkFhVGujYkFhqsULnqniuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbuLILT8TZK_pgu-QhPEUiRzwMPdmhG-mLf-nbuvUvfhpvN45ym3nvDznyczrH-9rjnkmyRYmWRYnywWujcLnhDsnHc3FMP85HThT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqniubIjd8iAP1Rj78ndKJPbk8Ts" target='_blank'>万部高清电影免费在线点播</a></div></td>
+
+<td style="font-size:14px;vertical-align:top;width:190px;"><div style="width:188px;height:1.2em;overflow:hidden"><a href="http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4njbkFMIGujYkFhVGujYzFhqsULnqnBuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbu9UAk4ugP1Xh7hmi49UAk4ugn8mvqVFHFAUy7GUBRzwh7buhP_pyPoFHPAuAc-nYw9UAk4ugP1Xh7hmiRzPhFGuaR1wjTYPHm-nbn1PWbvFHFjnWR1FHcvmv-bFHPDn16kniRzf1mkPzRzf1D-nWu1pyf-nYfLrHb1FHcvTv9EIzR1wA-MUhqzuiRzPMNzUaR1wA9YIZ0-nYD-nbm-nbm4rHb8mh7GuZR8mvqVFHFAFhV-XHdBmHTvrADLrHnLn19-mH6dPWubnyNhujTvmvc4uhnzuBu1UWYLFMnqPHnsmhwbrAfsPyF9mH-WnzuzTAq15HchuZfqUb9WTd0kUWPfpWunUMn" target='_blank'>999感冒灵亲情分享赢大礼</a></div></td>
+
+<td style="font-size:14px;vertical-align:top;width:190px;"><div style="width:188px;height:1.2em;overflow:hidden"><a href="http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4njm4FMIGujYkFhVGujYYFhqsULnqPauhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbu1pA7bIi4Bmy-bIi4WUvYhpvN45HDznyuBryDznHIBnHRvPW6smHT1PW0vPANhPAfsrjc1FMP85HThT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqnzubIjd8iAP1Rj78ndKJPbk8Ts" target='_blank'>卡巴斯基25半年40一年</a></div></td>
+
+<td style="font-size:14px;vertical-align:top;width:190px;"><div style="width:188px;height:1.2em;overflow:hidden"><a href="http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HDsnH0zFMIGujYkFhVGujYLFhqsULnqPzuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbuVUvFGUAR8mh7GuZR8mvqVFHFAIAN1Ij0kQh9YUys-nWPYULKhFhV-XHY3uhnsuh7Wm1N9P1m3rjnLm1c3uWRsuH7Wnhmkujuhnau1UWYLFMnqPHnsmhwbrAfsPyF9mH-WnzuzTAq15HfhuZfqUb9WTd0kUWPfpWunUMn" target='_blank'>热辣手机彩铃无限量下载</a></div></td>
+
+</tr>
+
+<tr><td width=6>&nbsp;</td>
+
+<td style="font-size:14px;vertical-align:top;width:190px;"><div style="width:188px;height:1.2em;overflow:hidden"><a href="http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4nHDYFMIGujYkFhVGujY3FhqsULnqrauhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbubmgw9QhF9pywdQhPEUiRzwM-EIg9GFhV-XHY4nH0sPyR4nAR3mhnduhDYuHKhmHTdPWKbnWmvrHTvPiu1UWYLFMnqPHnsmhwbrAfsPyF9mH-WnzuzTAq15HRhuZfqUb9WTd0kUWPfpWunUMn" target='_blank'>百度网游行业报告正式发布</a></div></td>
+
+<td style="font-size:14px;vertical-align:top;width:190px;"><div style="width:188px;height:1.2em;overflow:hidden"><a href="http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4nHfvFMIGujYkFhVGujYvFhqsULnqPBuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbu9uj03QhP9IZm8UhNYFHFAmywdThs-nbu9uZNzUa49TL0-nYu9uZNzUaR1wjcsnj6sPj01nj0kFhV-XHYLnyR4PHfLnjK-m1wWryuWuWmkPyndPHmsnHPhrHbzPzu1UWYLFMnqPHnsmhwbrAfsPyF9mH-WnzuzTAq15HmhuZfqUb9WTd0kUWPfpWunUMn" target='_blank'>超人气组合 代言当红网游</a></div></td>
+
+</table></td>
+	</tr>
+</table><br>
+<div id=leftRes>
+
+<table id="sm"><tr><td nowrap>以下内容系自动搜索的结果,排列及分类仅为方便使用,百度与内容的出处无关。使用前,请参阅<a href="http://www.baidu.com/search/appcopyright.html" target="_blank">权利声明</a>。</td></tr></table>
+<table border=0 cellpadding=0 cellspacing=0 id=Tbs rules=rows>
+	<tr> 
+		<th></th>
+		<th nowrap width="32%" nowrap>歌曲名</th>
+		<th width="9%" nowrap>歌手名</th>
+		<th width="15%" nowrap>专辑名</th>
+		<th width="6%" nowrap>试听</th>
+		<th width="6%" nowrap>歌词</th>
+		<th width="6%" nowrap>铃声</th>
+		<th width="8%" nowrap>大小</th>
+		<th width="6%" nowrap>格式</th>
+		<th width="10%" nowrap>链接速度</th>
+	</tr>
+
+<tr> 
+<td class=tdn>1</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,sweet dream  ·sweetdream&word=mp3,http://media.nbx.com/broadcast/YmhpZGc2.mp3,,[sweetdream]&si=sweet+dream;;%D5%C5%C4%C8%C0%AD;;0;;-5692&lm=16777216" title="请点击左键！来源网址：  http://media.nbx.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">sweet dream  ·<font style=color:#e10900>sweetdream</font></a></td>
+<td><a href="http://mp3.baidu.com/singerlist/%D5%C5%C4%C8%C0%AD.html" target="_blank">张娜拉</a>&nbsp;<a href="http://mp3.baidu.com/singerlist/.html" target="_blank"></a>&nbsp;<a href="http://mp3.baidu.com/singerlist/.html" target="_blank"></a>&nbsp;</td>
+<td class=al><a href="http://mp3.baidu.com/albumlist/%D5%C5%C4%C8%C0%AD;;;;;;%D2%BB%D5%C5.html" target="_blank">一张</a>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,sweet dream  ·sweetdream&word=mp3,http://media.nbx.com/broadcast/YmhpZGc2.mp3,,[sweetdream]&si=sweet+dream;;%D5%C5%C4%C8%C0%AD;;0;;-5692&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td><a href="http://mp3.baidu.com/m?tn=baidump3lyric&word=%D5%C5%C4%C8%C0%AD+sweet+dream&ct=150994944&lm=-1&lf=3" target="_blank">歌词</a>&nbsp;</td>
+<td> &nbsp;</td>
+<td>11.9 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d8.gif"></td>
+</tr><tr> 
+<td class=tdn>2</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,sweetdream 张娜拉&word=mp3,http://www.hogo.com.cn/zhongxue/amusement/music/lxgq/ZGoz.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.hogo.com.cn   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>sweetdream</font> 张娜拉</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,sweetdream 张娜拉&word=mp3,http://www.hogo.com.cn/zhongxue/amusement/music/lxgq/ZGoz.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>3.6 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d9.gif"></td>
+</tr><tr> 
+<td class=tdn>3</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,zhangnala sweetdream&word=wma,http://topic.ksatv.cn/618/song/zhangnala/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://topic.ksatv.cn   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">zhangnala <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,zhangnala sweetdream&word=wma,http://topic.ksatv.cn/618/song/zhangnala/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.8 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>4</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,mstream popcornfor2 com s sweetdream&word=wma,http://mstream.popcornfor2.com/pJGmq5qbq5yjl5ShNQ$$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://mstream.popcornfor2.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">mstream popcornfor2 com s <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,mstream popcornfor2 com s sweetdream&word=wma,http://mstream.popcornfor2.com/pJGmq5qbq5yjl5ShNQ$$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.1 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>5</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,mp3 sweetdream&word=mp3,http://www.jimwaive.com/mp3/pKmYmamaqZ2SnzM$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.jimwaive.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">mp3 <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,mp3 sweetdream&word=mp3,http://www.jimwaive.com/mp3/pKmYmamaqZ2SnzM$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.6 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>6</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,music Sweetdream&word=mp3,http://www.sweetdock.com/music/hKmYmamaqZ2SnzM$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.sweetdock.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">music <font style=color:#e10900>Sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,music Sweetdream&word=mp3,http://www.sweetdock.com/music/hKmYmamaqZ2SnzM$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>3.6 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>7</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,software sweetdream&word=wma,http://lyg.yihai.com:6079/software/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://lyg.yihai.com:6079   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">software <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,software sweetdream&word=wma,http://lyg.yihai.com:6079/software/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.4 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>8</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,sweetdream 张娜拉&word=mp3,http://www2.bict.edu.cn/jsj/up/dj/Y2Jja2ZmaGtjaWRqZ2dwOA$$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www2.bict.edu.cn   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>sweetdream</font> 张娜拉</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,sweetdream 张娜拉&word=mp3,http://www2.bict.edu.cn/jsj/up/dj/Y2Jja2ZmaGtjaWRqZ2dwOA$$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>3.6 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d6.gif"></td>
+</tr><tr> 
+<td class=tdn>9</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,sweetdream 张娜拉&word=mp3,http://www2.bift.edu.cn/jsj/up/dj/Y2Jja2ZmaGtjaWRqZ2dwOA$$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www2.bift.edu.cn   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>sweetdream</font> 张娜拉</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,sweetdream 张娜拉&word=mp3,http://www2.bift.edu.cn/jsj/up/dj/Y2Jja2ZmaGtjaWRqZ2dwOA$$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>3.6 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d6.gif"></td>
+</tr><tr> 
+<td class=tdn>10</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,SweetDream 试听当前音乐&word=wma,http://topic.ksatv.cn/618/song/zhangnala/hKmYmal6qZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://topic.ksatv.cn   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>SweetDream</font> 试听当前音乐</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,SweetDream 试听当前音乐&word=wma,http://topic.ksatv.cn/618/song/zhangnala/hKmYmal6qZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.8 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d6.gif"></td>
+</tr><tr> 
+<td class=tdn>11</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,MISSyouhappy sweetdream&word=wma,http://image.hnol.net/200504/chonger/MISSyouhappy/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://image.hnol.net   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">MISSyouhappy <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,MISSyouhappy sweetdream&word=wma,http://image.hnol.net/200504/chonger/MISSyouhappy/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.8 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>12</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,music sweetdream&word=wma,http://www.0714tv.com/music/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.0714tv.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">music <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,music sweetdream&word=wma,http://www.0714tv.com/music/pKmYmamaqZ2SnzM$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>2.7 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>13</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,SweetDream&word=mp3,http://mu1.njzx.com/znl-20050125/YWcz.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://mu1.njzx.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>SweetDream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,SweetDream&word=mp3,http://mu1.njzx.com/znl-20050125/YWcz.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>6.8 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>14</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,音乐 SweetDream&word=rmvb,http://move6.ls57.com/音乐/hKmYmal6qZ2Sn2GmoqyZOA$$,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://move6.ls57.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">音乐 <font style=color:#e10900>SweetDream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>14.6 M</td>
+<td>rmvb</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d4.gif"></td>
+</tr><tr> 
+<td class=tdn>15</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,SweetDream Korea Mandarin&word=mp3,http://www.myxpress.net/ring/ZGJlbWtrNw$$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.myxpress.net   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>SweetDream</font> Korea Mandarin</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,SweetDream Korea Mandarin&word=mp3,http://www.myxpress.net/ring/ZGJlbWtrNw$$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>0.3 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d4.gif"></td>
+</tr><tr> 
+<td class=tdn>16</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,NhipDieuCuocSong SweetDream JangNaRa&word=wma,http://www.filefarmer.com/2/hoang_ngocanh/Www_HoangClub_Go_To/Thanh_Pho_Vu_Hoi/NhipDieuCuocSong/hKmYmal6qZ2Sn5J-lqSehpKElDQ$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.filefarmer.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">NhipDieuCuocSong <font style=color:#e10900>SweetDream</font> JangNaRa</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,NhipDieuCuocSong SweetDream JangNaRa&word=wma,http://www.filefarmer.com/2/hoang_ngocanh/Www_HoangClub_Go_To/Thanh_Pho_Vu_Hoi/NhipDieuCuocSong/hKmYmal6qZ2Sn5J-lqSehpKElDQ$.wma,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>1.8 M</td>
+<td>wma</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d5.gif"></td>
+</tr><tr> 
+<td class=tdn>17</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,21se1 260 sweetdream&word=mp3,http://211.157.109.136:8080/~m21se/image_news/21se1_260/pKmYmamaqZ2SnzM$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://211.157.109.136:8080   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">21se1 260 <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,21se1 260 sweetdream&word=mp3,http://211.157.109.136:8080/~m21se/image_news/21se1_260/pKmYmamaqZ2SnzM$.mp3,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0')">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>0.9 M</td>
+<td>mp3</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d1.gif"></td>
+</tr><tr> 
+<td class=tdn>18</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,quku sweetdream&word=mid,http://huhumidi.com/quku/pKmYmamaqZ2SnzM$.mid,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://huhumidi.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">quku <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>31.4 K</td>
+<td>mid</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d1.gif"></td>
+</tr><tr> 
+<td class=tdn>19</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,real sweetdream&word=ram,http://ray.com.hk/real/pKmYmamaqZ2SnzM$.ram,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://ray.com.hk   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">real <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td><a href="http://box.zhangmen.baidu.com/m?gate=1&ct=134217728&tn=baidumt,real sweetdream&word=ram,http://ray.com.hk/real/pKmYmamaqZ2SnzM$.ram,,[sweetdream]&si=;;;;0;;0&lm=16777216" onclick="return ot(event,this,'0');">试听</a>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>未知</td>
+<td>ram</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d1.gif"></td>
+</tr><tr> 
+<td class=tdn>20</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,SweetDream 红豆女之恋&word=mid,http://www.soqin.com/gudianyinyue/midi/hx/Y2JjamZnaWliY2Vpa29ucGZpMw$$.mid,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.soqin.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank"><font style=color:#e10900>SweetDream</font> 红豆女之恋</a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>13.1 K</td>
+<td>mid</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d1.gif"></td>
+</tr><tr> 
+<td class=tdn>21</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,quku sweetdream&word=mid,http://www.huhumidi.com/quku/pKmYmamaqZ2SnzM$.mid,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.huhumidi.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">quku <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>31.4 K</td>
+<td>mid</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d1.gif"></td>
+</tr><tr> 
+<td class=tdn>22</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,9712 sweetdream&word=mid,http://www.geocities.com/EnchantedForest/Tower/9712/pKmYmamaqZ2SnzM$.mid,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://www.geocities.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">9712 <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>71.4 K</td>
+<td>mid</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d1.gif"></td>
+</tr><tr> 
+<td class=tdn>23</td>
+<td class=d><a href="http://220.181.38.82/m?ct=134217728&tn=baidusg,flash sweetdream&word=flash,http://flash.yideng.com/bbs/flash/pKmYmamaqZ2SnzM$.swf,,[sweetdream]&si=;;;;0;;0&lm=16777216" title="请点击左键！来源网址：  http://flash.yideng.com   请参照百度权利声明使用" onclick="return ow(event,this)"  target="_blank">flash <font style=color:#e10900>sweetdream</font></a></td>
+<td>&nbsp;</td>
+<td class=al>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td> &nbsp;</td>
+<td>0.5 M</td>
+<td>flash</td>
+<td class=spd><img src="http://img.baidu.com/img/mp3/d2.gif"></td>
+</tr>
+</table>
+<script>var ls=document.getElementsByName("ls");var len=ls.length,dis=0;for(var i=0;i<len;i++){if(ls[i].toString().search(/doubleclick/)!=-1){ls[i].innerHTML='<img src="http://img.baidu.com/img/mp3/m-zone.gif"/>';dis++;}}if(dis)document.write('<img style="display:none" src="http://mp3.baidu.com/wd/mp3-s.jpg?count='+(new Date()).getTime()+'">');</script>
+<br>
+<table width=100% border=0 cellpadding=2 cellspacing=0>
+	<tr><td><div class="pg"></div></td></tr>
+</table>
+
+<h6>找到<font color=#e10900>sweetdream</font>相关视频约704个&nbsp;&nbsp;&nbsp;&nbsp;<noscript><a id="mo" href="http://video.baidu.com/v?word=sweetdream&ct=318767104&rn=20&pn=0&db=0&ty=1&s=10" target="_blank">查看更多&gt;&gt;</a></noscript><script>document.write('<a id="mo" href="http://video.baidu.com/v?word=sweetdream&ct=301989888&rn=20&pn=0&db=0&ty=1&s=10" target="_blank">查看更多&gt;&gt;</a>');if(screen.width>800) document.getElementById("mo").href+="&fbl=1024";</script></h6>
+<div id="DivMv">
+	<table>
+		<tr>
+			<td><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=1&s=3"><img src="http://v3.baidu.com/itn?u=308067898,313073368&s=0" title="sweetdream(中文版)"></a><p><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=1&s=4"><font style=color:#e10900>sweetdream</font>(中文版)</a></p>www.youku.com</td>
+			<td><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=2&s=3"><img src="http://v3.baidu.com/itn?u=2501755181,4160601445&s=0" title="張娜拉SweetDream舞蹈教學"></a><p><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=2&s=4">張娜拉<font style=color:#e10900>SweetDream</font>舞蹈教學</a></p>www.tudou.com</td>
+			<td><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=3&s=3"><img src="http://v6.baidu.com/itn?u=1403264458,3121241879&s=0" title="张娜拉   SweetDream"></a><p><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=3&s=4">张娜拉   <font style=color:#e10900>SweetDream</font></a></p>www.youku.com</td>
+			<td><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=4&s=3"><img src="http://v6.baidu.com/itn?u=156565331,3053221476&s=0" title="張娜拉MTV SweetDream"></a><p><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=4&s=4">張娜拉MTV <font style=color:#e10900>SweetDream</font></a></p>www.youku.com</td>
+			<td id="vi"><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=5&s=3"><img src="http://v1.baidu.com/itn?u=586430703,1520321547&s=0" title="韩国极品美女张娜拉—Sweetdream"></a><p><a target="_blank" href="http://video.baidu.com/p?word=sweetdream&pos=5&s=4">韩国极品美女张娜拉—S...</a></p>www.youku.com</td><script>if(screen.width>800) document.getElementById("vi").style.display="block";</script>
+		</tr>
+	</table>
+</div>
+
+
+<style>
+
+#TbMp3{margin:30px 0 30px}
+
+#TbMp3
+td{height:28px;font-size:14px;color:#000;line-height:18px;padding-left:5px;font-weight:600}
+
+
+#TbMp3 td span{font-size:13px;font-weight:100}
+
+#TbMp3 sup{color:red;font-family:arial;font-size:11px;}
+
+</style>
+
+<table id=TbMp3>
+
+<tr><td><a href="http://list.mp3.baidu.com/list/topmp3.html"
+target="_blank">MP3排行榜</a> · <span><a
+href="http://list.mp3.baidu.com/list/newhits.html?top1" target="_blank">
+新歌TOP100</a> · <a
+href="http://list.mp3.baidu.com/topso/mp3topsong.html?top2"
+target="_blank">歌曲TOP500</a> · <a
+href="http://list.mp3.baidu.com/list/bangping.html" target="_blank">中文
+金曲榜</a> · <a href="http://list.mp3.baidu.com/list/top200.htm?top3"
+target="_blank">歌手TOP200</a> · <a
+href="http://list.mp3.baidu.com/singer/singers.html?top7"
+target="_blank">歌手列表</a> · <a
+href="http://list.mp3.baidu.com/song/A.htm?top8" target="_blank">歌曲列
+表</a></span></td></tr>
+
+<tr><td><a href="http://list.mp3.baidu.com/list/mp3zt.html"
+target="_blank"><b>音乐专题</b></a></font> · <span style="font-size:13px;"> <a href="http://zhangmen.baidu.com/pubalbum/10000/14.html" target="_blank">
+动漫歌曲</a> · <a
+href="http://list.mp3.baidu.com/list/qingyinyue.html?top19"
+target="_blank">轻音乐</a> · <a href="http://list.mp3.baidu.com/list/oumei.html"
+target="_blank">欧美金曲</a> · <a
+href="http://list.mp3.baidu.com/list/rihan.html" target="_blank">日韩流
+行风</a> · <a
+href="http://list.mp3.baidu.com/list/08jay.html" target="_blank">周杰伦不为人知的音乐</a> · <a href="http://list.mp3.baidu.com/list/08qingming.html"
+target="_blank">伤感音乐专题</a></b><sup>New！</sup></span></td></tr>
+
+<tr><td><a href="http://zhangmen.baidu.com/?id=2" target="_blank">音乐掌
+门人</a> · <span><a href="http://zhangmen.baidu.com/?id=2"
+target="_blank">48小时人气</a> · <a
+href="http://zhangmen.baidu.com/allpromotions_ex_sup.htm?id=2"
+target="_blank">一周人气</a> · <a
+href="http://zhangmen.baidu.com/allpromotions_ex_fav.htm?id=2"
+target="_blank">百度推荐</a> · <a
+href="http://zhangmen.baidu.com/sortgroup.jsp?id=2" target="_blank">热门
+分类</a> · <a href="http://list.mp3.baidu.com/list/zhounian2.html"
+target=_blank>两周年庆</a></b><sup></sup></span></td></tr>
+
+</table>
+
+<table><tr><td style="border:1px solid #BDDEED;padding:5px 10px;margin:35px 7px 25px!important;margin:25px 10px;font-size:12px"><a href="http://mobile.baidu.com/index.html?id=2" target="_blank"><b
+style="font-size:14px">手机娱乐</b></a>:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+href="http://mobile.baidu.com/sjyy.html?id=2" target="_blank">手机音乐
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+href="http://mobile.baidu.com/topring.html?id=2" target="_blank">铃声排
+行</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+href="http://mobile.baidu.com/fashion.html?id=2" target="_blank">彩铃排
+行</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+href="http://mobile.baidu.com/mp3ring.html?id=2" target="_blank">MP3铃声
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+href="http://mobile.baidu.com/picture.html?id=2" target="_blank">热辣彩
+图</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+href="http://mobile.baidu.com/topivr.html?id=2" target="_blank">亲情点歌
+</a></div></td></tr></table>
+	
+	<table style="TABLE-LAYOUT: fixed;WORD-BREAK: break-all;margin-top:30px"  width=40% align=left border=0 cellpadding="0" cellspacing="0"><tr><td><table width=90% border=0 cellpadding=2 cellspacing=0 style="background-color:#E6F9EC;border:1px solid #DFF3B1;"><tr><td colspan=2 style="table-layout:fixed;word-break:break-all;border-top:1px solid #6FA02B;" bgcolor="#DFF3B1"><font style=FONT-SIZE:9pt>贴吧: </font><a href=http://tieba.baidu.com/f?kw=sweetdream target=_blank><font style=FONT-SIZE: 9pt>发布/查看关于<font color="#C60A00">sweetdream</font>的留言 88 篇</font></a></td></tr></table></td></tr></table>
+</div><br clear=all>
+<table width=18% align=right id=rightAd cellpadding="0" cellspacing="0" border=0>
+<script>
+if(window.screen.width<=800)
+{
+  if(maString==""){document.getElementById("rightAd").style.paddingTop="65px"}
+  else{document.getElementById("rightAd").style.paddingTop="155px"}
+}
+</script>
+	<tr> 
+		<td width="190">
+			<table border=0 cellpadding=0 cellspacing=0><tr><td><table width=175 border=0 cellpadding=0 cellspacing=0 bordercolorlight=#9EC8DE bordercolordark=#FFFFFF><tr><td  bgcolor=#ECFAFF><a href='http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4nHDzFMIGujYkFhVGujYkFhqsULnqniuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbu1ugFvugckQh7bTAq_ugPYmgc8UhNYFHFAfRwfUvk-TLw9TBRzwhkMTzRzwMI9XiRzwBR1fhNzFHPDFHcvUgm-nYfLnH0-nWusIiR1wZIEUhw-TBRzPh7bFHPDnHfLPW0sniR1wh9YIZ0-nYD-nbm-nbuhuht8TgD8mvqVFHFAmyPYFHFAmHcsnj6snWcvUhNLugc-nbm-nYuKw7wKwzR1wD-7wa45IgwKwa4Bmy-bIi3snjchpvN45HDLuWc3uyfsnjKBrAP9rjD3uycLn1FBnjNBP1bkP1IWFMP85HRhT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqniubIjd8iAP1Rj78ndKJPbk8Ts' target='_blank'><img src='http://eiv.baidu.com/maimg/20080403/545154015.jpg' width=175 height=75 border=0></a></td></tr></table><br>
+
+
+
+
+
+<table width=175 border=0 cellpadding=0 cellspacing=0 bordercolorlight=#9EC8DE bordercolordark=#FFFFFF><tr><td  bgcolor=#ECFAFF><a href='http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4njTkFMIGujYkFhVGujYvFhqsULnqPBuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbuMQhF9pywdQhPEUiRzwh-8uAN3gvPCmy48uys8Tv9YUys-nYuMFHPDPj63FhV-XHdBuymkuHRYPjRsnjc4mycdPyDYuAD1uAfkujw-nWuWnau1UWYdFMnqPHnsmhwbrAfsPyF9mH-WnzuzTAq15HchuZfqUb9WTd0kUWPfpWunUMn' target='_blank'><img src='http://eiv.baidu.com/maimg/20080402/1098170907.gif' width=175 height=75 border=0></a></td></tr></table><br>
+
+
+
+
+
+<table width=175 border=0 cellpadding=0 cellspacing=0 bordercolorlight=#9EC8DE bordercolordark=#FFFFFF><tr><td  bgcolor=#ECFAFF><a href='http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4nH0kFMIGujYkFhVGujY1FhqsULnqnzuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbu1ugFvugckQh7bTAq_ugPYmgc8UhNYFHFAfRwfUvk-TLw9TBRzwhkMTzRzwMI9XiRzwBR1fhNzFHPDFHcvUgm-nYfLnH0-nWusIiR1wZIEUhw-TBRzPh7bFHPDnHn3PW0zPaR1wh9YIZ0-nYD-nbm-nbuMuz3kPvI9UyR8mvqVFHFAFHPApyf-nYf3P1nhpvN45HczryRYn1u-rjwbmhmdnWT4PHmvujb4uWc1nyfLm1cvFMP85HRhT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqnzubIjd8iAP1Rj78ndKJPbk8Ts' target='_blank'><img src='http://eiv.baidu.com/maimg/20080403/1757150321.gif' width=175 height=75 border=0></a></td></tr></table><br>
+
+
+
+
+
+<table width=175 border=0 cellpadding=0 cellspacing=0 bordercolorlight=#9EC8DE bordercolordark=#FFFFFF><tr><td  bgcolor=#ECFAFF><a href='http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4njRkFMIGujYkFhVGujYYFhqsULnqPauhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbuMuLwJQMI9Uhd-pi4WUvY-nbuJTL0-nbuMuzRzwhkGUh_8pMPsFHPAuvI8myd-FHPDTMTzn101nW6-nWudThs-nYwCIZwsFHPKFHFAFHFAILILQMFLTAf8mvqVFHFAFHcvIZ-suiR1wjDhpvN45yf1PHKhuym4uHn1nADkmHcznHKWnj6YPHmdrj9hPyPhFMP85HRhT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqPaubIjd8iAP1Rj78ndKJPbk8Ts' target='_blank'><img src='http://eiv.baidu.com/maimg/20080331/2523192114.jpg' width=175 height=75 border=0></a></td></tr></table><br>
+
+
+
+
+
+<table width=175 border=0 cellpadding=0 cellspacing=0 bordercolorlight=#9EC8DE bordercolordark=#FFFFFF><tr><td  bgcolor=#ECFAFF><a href='http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD3rH0vFMIGujYkFhVGujYLFhqsULnqPzuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbmknj08mh7GuZR8mvqVFhV-XHd-rHDkujmzmHczn1P-uANhm1csryR3PH03rju9P16Lmzu1UWYdFMnqPHnsmhwbrAfsPyF9mH-WnzuzTAq15HRhuZfqUb9WTd0kUWPfpWunUMn' target='_blank'><img src='http://eiv.baidu.com/maimg/20080324/1098111611.gif' width=175 height=75 border=0></a></td></tr></table><br>
+
+
+
+
+
+<table width=175 border=0 cellpadding=0 cellspacing=0 bordercolorlight=#9EC8DE bordercolordark=#FFFFFF><tr><td  bgcolor=#ECFAFF><a href='http://ma.baidu.com/ma/rcv/click.php?t=uv-b5HDhTv-b5HD4nH01FMIGujYkFhVGujY4FhqsULnqriuhUWdBmy-bIydsndq1uy7zmv6hIgF_5y9YIZ0-nYD-nbm-nbu9UAk4ugP1pA7hmi49UAk4ugn8mvqVFHFAUy7GUBRzwh7buhP_pyPoFHPAuAc-nYw9UAk4ugP1pA7hmiRzPhFGuaR1wjD3rjR3FHFjrHfsnzRzf1f3PiRzPhPGuaR1wjDvPaRzf1b-nbnkFHcvTv-bFHPDnHbzP1R-nWu1pAqLFHPDpyI8ULF-FHcvIgF_FHPDpZwYTaR1fiRzwBRzwMK-TZPGQWDvnz4WUvY-nbmhpvN45HuBmWR1uWbdmyfYmWb4n1R1ujfYn19WuH9WmHTsry7bFMP85HRhT1Ydn1KBuAf3uj0dmh79ryn1FMFsULnqPBubIjd8iAP1Rj78ndKJPbk8Ts' target='_blank'><img src='http://eiv.baidu.com/maimg/20080403/545143829.gif' width=175 height=75 border=0></a></td></tr></table><br>
+
+
+
+
+
+</td></tr></table>
+			
+			
+			
+		</td>
+	</tr>
+</table><br clear=all>
+<table class=dBlue>
+	<form action="http://mp3.baidu.com/m" name=f2 onsubmit="return syn(this)">
+	<input type=hidden name=f value=ms>
+	<input type=hidden name=tn value="baidump3">
+	<input type=hidden name=ct value=134217728>
+	<input type=hidden name=lf>
+	<input type=hidden name=rn>
+	<tr>
+		<td height=60 nowrap>
+			<table cellspacing=0 cellpadding=0 border=0 align=center>
+				<tr>
+					<td nowrap><input class=formfont size=42 value="sweetdream" name=word>&nbsp;<input type=submit value=百度一下> <input type=button value=歌词搜索 onclick=g(f2)>&nbsp;&nbsp;&nbsp;<a href="http://utility.baidu.com/quality/quality_form.php?word=sweetdream">与百度对话</a><br>
+						<label for="video2"> <input name=lm type=radio value="" id="video2" >视频</label>
+						<label for="aW2"><input name=lm type=radio value=-1 id="aW2" >歌词</label>
+						<label for="aM2"><input name=lm type=radio value=-1 id="aM2" checked>全部音乐</label>
+						<label for="Mp32"><input name=lm type=radio value=0 id="Mp32" >mp3</label>
+						<label for="RM2"><input name=lm type=radio value=1 id="RM2" >rm</label>
+						<label for="WMA2"><input name=lm type=radio value=2 id="WMA2" >wma</label>
+						<label for="Else2"><input name=lm type=radio value=32767  id="Else2" >其它格式</label>
+						<label for="Ring2"><input name=lm type=radio value=-1 id="Ring2">铃声</label>
+						<label for="Song2"><input name=lm type=radio id="Song2" value=-1>彩铃</label>
+					</td>
+					<td nowrap>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</form>
+</table>
+<style>
+#ft{clear:both;line-height:20px;text-align:center}
+#ft,#ft *{color:#77C;font-size:12px;font-family:Arial;white-space:nowrap}
+</style>
+<div id="ft">&copy;2008 Baidu</div>
+<form name=vform id=vform style="display:none" target="_blank">
+	<img src="http://mp3.baidu.com/wd/mp3-s.jpg?word=sweetdream">
+	<img src="http://c.baidu.com/c.gif?t=4&q=sweetdream&p=0&pn=1">
+</form>
+<script>
+var left_height=document.getElementById("leftRes").offsetHeight;
+var right_height=document.getElementById("rightAd").offsetHeight;
+if(right_height>left_height){document.getElementById("leftRes").style.height=right_height}	
+function syn(form)
+{
+	form.lf.value="";
+	if (form.lm[7].checked){setInput(form,"baidump3ring","285212672",false,false)}
+	else if(form.lm[1].checked){form.lf.value="2";setInput(form,"baidump3lyric","150994944","10",false)}
+	else if(form.lm[8].checked){setInput(form,"baidump3cal","134217728",false,"http://calling.baidu.com/m")}
+	else if(form.lm[0].checked){setVideoForm(form);return false}
+	else{setInput(form,"baidump3","134217728",false,false)}
+	return true
+}
+function setInput(fn,tnv,ctv,rnv,actv){fn.tn.value=tnv;fn.ct.value=ctv;fn.rn.value=rnv?rnv:"";fn.action=actv?actv:"http://mp3.baidu.com/m"}
+function g(form)
+{	if(form.lm[0].checked){form.lf.value="4"}
+	else {form.lf.value="1"}
+	form.lm.value="-1";
+	setInput(form,"baidump3lyric","150994944","10",false);
+	form.submit()
+}
+function setVideoForm(f)
+{
+	var s='<input type=hidden name=ct value="301989888">';
+	s+='<input type=hidden name=rn value="20">';
+	s+='<input type=hidden name=pn value="0">';
+	s+='<input type=hidden name=db value="0">';
+	s+='<input type=hidden name=s value="3">';
+	s+='<input type=hidden name=word value="'+f.word.value+'">';
+	document.getElementById("vform").innerHTML=s;
+	document.getElementById("vform").action="http://video.baidu.com/v";
+	document.getElementById("vform").submit()
+}
+</script>
+</BODY>
+</HTML> 

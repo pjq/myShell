@@ -1,0 +1,5 @@
+#! /bin/bash
+export LC_ALL=en_US.utf8
+export XMODIFIERS=
+cd /mnt/d/starcraft
+cedega StarCraft.exe

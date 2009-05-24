@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>城市天气_天气预报_新浪网</title>
+<meta name="Keywords" content="城市天气，天气预报" />
+<meta name="Description" content="城市天气，天气预报" />
+<link rel="stylesheet" href="../css/style_test.css" />
+<script type="text/javascript" src="http://image2.sina.com.cn/home/sinaflash.js"></script>
+
+<!--[if IE]>
+<style type="text/css">
+#banner #bannerSearch p{padding:13px 0 0 0;}
+#WeatherMMS,#WeatherWAP{margin-bottom:-3px;}
+</style>
+<![endif]-->
+
+</head>
+<body><!-- SUDA_CODE_START --> 
+<script type="text/javascript" src="http://www.sinaimg.cn/unipro/pub/suda_s_v835c.js"></script> 
+<script type="text/javascript" > 
+_S_pSt(_S_PID_); 
+</script>
+
+<!-- SUDA_CODE_END --> 
+<div id="wrap">
+
+<!-- 标准头开始 -->
+<iframe src="http://weather.news.sina.com.cn/iframe/22/2007/1123/21.html" marginheight=0 marginwidth=0 frameborder=0 scrolling=no width=750 height=40></iframe>
+<!-- 标准头结束 -->
+
+<!-- banner begin -->
+<div id="banner">
+	<!-- 城市天气搜索 begin -->
+	<form name="city" method="post" action="http://php.weather.sina.com.cn/search.php">
+	<div id="bannerSearch">
+		<p>城市天气</p>
+		<fieldset><input type="text" name="city" value="输入地名、拼音、电话区号均可" onClick="javascript:if(this.value=='输入地名、拼音、电话区号均可')this.value='';" class="city"/><input type="submit" class="cityBtn" value="搜索"/></fieldset>
+	</div>
+	</form>
+	<!-- 城市天气搜索 end -->
+</div>
+<!-- banner end -->
+
+<!-- 快速导航 begin -->
+<div id="QNav"><a href="http://weather.news.sina.com.cn">天气首页</a> &gt; <span>城市天气</span></div>
+<!-- 快速导航 end -->
+
+<!-- 061218修改 ws begin -->
+<div style="height:10px; overflow:hidden; clear:both; background:#fff;"></div>
+<!-- 061218修改 ws end -->
+
+<div id="wrap4">
+
+
+<!-- 天气状况 begin -->
+<div id="Weather3DBlk">
+
+<div class="Weather3D">
+	<div class="WeatherB1">
+		<div class="City_Data">
+			<h3>今日 上海</h3>
+			<p>08年04月07日-08日&nbsp;星期一</p>
+		</div>
+		<div class="Weather_Icon_B"><img src="http://image2.sina.com.cn/dy/weather/images/figure/qing_big.gif" ><img src="http://image2.sina.com.cn/dy/weather/images/figure/duoyun_big.gif" ></div>
+		<div class="Weather_TP">晴转多云 26℃～16℃</div>
+		<div class="Weather_W">&nbsp;风力：4-5级 至 5-6级</div>
+	</div>
+	<div class="Weather_SM">
+		<p><span>污染指数：</span>2，良。气象条件有利于空气污染物稀释、扩散和清除，可在室外正常活动。</p>		<p><span>紫外线指数：</span>4，强。紫外线辐射强，建议涂擦SPF20左右、PA++的防晒护肤品。避免在10点至14点暴露于日光下。</p>		<p><span>舒适度指数：</span>0，舒适。白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。</p>		<p><span>体感指数：</span>最低温度13&deg;C，最高温度25&deg;C</p>		<p><span>防晒指数：</span>4，强。属强紫外辐射天气，外出时应加强防护，建议涂擦SPF在15？20之间，PA++的防晒护肤品。</p>		<p><span>中暑指数：</span>0，无。温度不高，其他各项气象条件适宜，中暑机率极低。</p>		<p><span>穿衣指数：</span>3，暖。建议着长袖衫裤等春秋过渡装。体弱者宜着长袖衫裤加马甲。但昼夜温差较大，适当增减衣服。</p>		<p><span>空调指数：</span>4，较少开启。您将感到很舒适，一般不需要开启空调。</p>		<p><span>洗车指数：</span>3，较不宜。较不宜洗车，未来一天无雨，风力较大，如果执意擦洗汽车，要做好蒙上污垢的心理准备。</p>		<p><span>钓鱼指数：</span>2，较适宜。较适合垂钓，但风力稍大，会对垂钓产生一定的影响。</p>	</div>
+</div>
+
+<!-- 061218修改 ws begin -->
+<div style="height:10px; overflow:hidden; clear:both; background:#fff;"></div>
+<!-- 061218修改 ws end -->
+<div class="Weather3D">
+	<div class="WeatherB1">
+		<div class="City_Data">
+			<h3>明日 上海</h3>
+			<p>08年04月08日-09日&nbsp;星期二</p>
+		</div>
+		<div class="Weather_Icon_B"><img src="http://image2.sina.com.cn/dy/weather/images/figure/zhenyu_big.gif" ><img src="http://image2.sina.com.cn/dy/weather/images/figure/leizhenyu_big.gif" ></div>
+		<div class="Weather_TP">阵雨转雷阵雨 21℃～15℃</div>
+		<div class="Weather_W">&nbsp;风力：5-6级 至 4-5级</div>
+	</div>
+	<div class="Weather_SM">
+		<p><span>污染指数：</span>1，优。气象条件非常有利于空气污染物稀释、扩散和清除，可在室外正常活动。</p>		<p><span>紫外线指数：</span>2，弱。紫外线强度较弱，建议出门前涂擦SPF在12-15之间、PA+的防晒护肤品。</p>		<p><span>舒适度指数：</span>0，舒适。白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。</p>		<p><span>体感指数：</span>最低温度11&deg;C，最高温度15&deg;C</p>		<p><span>防晒指数：</span>2，较弱。紫外线强度较弱，建议涂擦SPF在12-15之间，PA+的防晒护肤品。</p>		<p><span>中暑指数：</span>0，无。温度不高，其他各项气象条件适宜，中暑机率极低。</p>		<p><span>穿衣指数：</span>4，舒适。建议着薄型套装或牛仔衫裤等春秋过渡装。年老体弱者宜着套装、夹克衫等。</p>		<p><span>空调指数：</span>4，较少开启。您将感到很舒适，一般不需要开启空调。</p>		<p><span>洗车指数：</span>4，不宜。不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。</p>		<p><span>钓鱼指数：</span>3，不宜。风力太大，不适合垂钓。</p>	</div>
+</div>
+
+<!-- 061218修改 ws begin -->
+<div style="height:10px; overflow:hidden; clear:both; background:#fff;"></div>
+<!-- 061218修改 ws end -->
+<div class="Weather3D">
+	<div class="WeatherB1">
+		<div class="City_Data">
+			<h3>后天 上海</h3>
+			<p>08年04月09日-10日&nbsp;星期三</p>
+		</div>
+		<div class="Weather_Icon_B"><img src="http://image2.sina.com.cn/dy/weather/images/figure/zhenyu_big.gif" ><img src="http://image2.sina.com.cn/dy/weather/images/figure/yin_big.gif" ></div>
+		<div class="Weather_TP">阵雨转阴 23℃～12℃</div>
+		<div class="Weather_W">&nbsp;风力：4-5级</div>
+	</div>
+	<div class="Weather_SM">
+		<p><span>污染指数：</span>2，良。气象条件有利于空气污染物稀释、扩散和清除，可在室外正常活动。</p>		<p><span>紫外线指数：</span>1，最弱。属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。</p>		<p><span>舒适度指数：</span>0，舒适。白天不太热也不太冷，风力不大，相信您在这样的天气条件下，应会感到比较清爽和舒适。</p>		<p><span>体感指数：</span>最低温度9&deg;C，最高温度21&deg;C</p>		<p><span>防晒指数：</span>1，弱。属弱紫外辐射天气，长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。</p>		<p><span>中暑指数：</span>0，无。温度不高，其他各项气象条件适宜，中暑机率极低。</p>		<p><span>穿衣指数：</span>4，舒适。建议着薄型套装等春秋过渡装。年老体弱者宜着套装。但昼夜温差较大，注意适当增减衣服。</p>		<p><span>空调指数：</span>4，较少开启。您将感到很舒适，一般不需要开启空调。</p>		<p><span>洗车指数：</span>4，不宜。不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。</p>		<p><span>钓鱼指数：</span>3，不宜。天气不好，有风，不适合垂钓。</p>	</div>
+</div>
+
+<!-- 061218修改 ws begin -->
+<div style="height:10px; overflow:hidden; clear:both; background:#fff;"></div>
+<!-- 061218修改 ws end -->
+
+</div>
+<!-- 天气状况 end -->
+
+
+<!-- 侧边栏 begin -->
+<div id="SideBar">
+	<div id="MapBtn" style='width:153px; height:1px; overflow:hidden; margin:5px auto 0 auto;'></div>
+	<!-- 全国天气图 begin -->
+	<!--<div id="MapBtn"><a href=http://weather.news.sina.com.cn/images/figureWeather/map/wholeNation.html target=_blank><img src="http://image2.sina.com.cn/dy/weather/images/ntqyb/wheather_i_ws_025.gif" width="153" height="128" alt="全国天气图" title=""/></a></div>
+	-->
+	<!-- 全国天气图 end -->
+		<!-- 分区浏览 begin -->
+	<div id="ZoneV">
+	
+		<!-- 071123 ws begin -->
+		<h1><span class="capname">邻近城市</span><!--<span id="chgCityMenu_t1" onclick="chgCityMenu(1);"></span>--></h1>
+		<!--<div id="chgCityMenu_c1">-->
+		<div>
+			<ul>
+						<li><a href="http://php.weather.sina.com.cn/search.php?city=北京&dpc=1">北京</a></li>
+						<li><a href="http://php.weather.sina.com.cn/search.php?city=香港&dpc=1">香港</a></li>
+						<li><a href="http://php.weather.sina.com.cn/search.php?city=澳门&dpc=1">澳门</a></li>
+						</ul>
+		</div>
+		<!--
+		<h1><span class="capname">分区浏览</span><span id="chgCityMenu_t2" onclick="chgCityMenu(2);"></span></h1>
+		<div id="chgCityMenu_c2">
+			<h2><span>国内</span>涵盖全国300多个城市</h2>
+			<ul>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/3.html" target="_blank">华北</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/4.html" target="_blank">华东</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/5.html" target="_blank">东北</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/6.html" target="_blank">中南</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/7.html" target="_blank">西北</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/8.html" target="_blank">西南</a></li>
+			</ul>
+			<h2><span>国际</span></h2>
+			<ul>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/9.html" target="_blank">亚洲</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/10.html" target="_blank">欧洲</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/13.html" target="_blank">北美洲</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/14.html" target="_blank">南美洲</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/11.html" target="_blank">非洲</a></li>
+				<li><a href="http://weather.news.sina.com.cn/22/2007/1123/12.html" target="_blank">大洋洲</a></li>
+			</ul>
+		</div>
+		-->
+		
+		<script type="text/javascript">
+		function chgCityMenu(Id){
+			for(var i=1;i<=2;i++){
+				document.getElementById("chgCityMenu_t"+i).className = "caplink";
+				document.getElementById("chgCityMenu_c"+i).style.display = "none";
+			}
+			if(Id==1){
+				document.getElementById("chgCityMenu_t1").className = "caplinkOn";
+				document.getElementById("chgCityMenu_c1").style.display = "block";
+				document.getElementById("chgCityMenu_t2").className = "caplink";
+				document.getElementById("chgCityMenu_c2").style.display = "none";
+			}else if(Id==2){
+				document.getElementById("chgCityMenu_t2").className = "caplinkOn";
+				document.getElementById("chgCityMenu_c2").style.display = "block";
+				document.getElementById("chgCityMenu_t1").className = "caplink";
+				document.getElementById("chgCityMenu_c1").style.display = "none";
+			}
+		}
+		//chgCityMenu(1);//设置默认开启
+		</script>
+		
+		<!-- 071123 ws end -->
+		
+	</div>
+	<!-- 分区浏览 end -->
+	
+	<!-- 短信天气预报 begin -->
+	<div id="WeatherLv2MMS">
+		<div id="WeatherMMSImg"><img src="http://image2.sina.com.cn/dy/weather/images/ntqyb/wheather_i_ws_011.gif" width="119" height="116" alt="短信天气预报" title=""/></div>
+		<form name="dingyue" method="post" action="http://sms.sina.com.cn/sms_php/newexprsub.php" target="_blank">
+		<div id="WeatherMMSAct">
+			<input type="hidden" name="from" value="441"/>
+			<select name="svc">
+			<option value="100001" selected="selected">北京</option>
+			<option value="100002">天津</option>
+			<option value="100003">太原</option>
+			<option value="100004">石家庄</option>
+			<option value="100005">济南</option>
+			<option value="100006">青岛</option>
+			<option value="100007">呼和浩特</option>
+			<option value="100008">福州</option>
+			<option value="100009">广州</option>
+			<option value="100010">厦门</option>
+			<option value="100011">南宁</option>
+			<option value="100013">海口</option>
+			<option value="100015">郑州</option>
+			<option value="100016">武汉</option>
+			<option value="100017">长沙</option>
+			<option value="100018">南昌</option>
+			<option value="100019">合肥</option>
+			<option value="100020">上海</option>
+			<option value="100021">南京</option>
+			<option value="100024">杭州</option>
+			<option value="100025">哈尔滨</option>
+			<option value="100026">沈阳</option>
+			<option value="100027">长春</option>
+			<option value="100028">大连</option>
+			<option value="100029">乌鲁木齐</option>
+			<option value="100030">银川</option>
+			<option value="100031">西安</option>
+			<option value="100032">西宁</option>
+			<option value="100033">兰州</option>
+			<option value="100034">拉萨</option>
+			<option value="100035">重庆</option>
+			<option value="100036">昆明</option>
+			<option value="100037">成都</option>
+			<option value="100038">贵阳</option>
+			<option value="100039">香港</option>
+			<option value="100040">澳门</option>
+			<option value="100041">台北</option>
+			<option value="100042">东京</option>
+			<option value="100044">新加坡</option>
+			<option value="100046">曼谷</option>
+			<option value="100047">汉城</option>
+			</select><input type="submit" value="订"/>
+		</div>
+		</form>
+	</div>
+	<!-- 短信天气预报 end -->
+	
+	<!-- WAP天气预报 begin -->
+	<!--
+	<div id="WeatherLv2WAP">
+	
+		<script type="text/javascript">
+		function op(linkURL){
+			window.open("http://waponline.sina.com.cn/cgi-bin/online/"+linkURL,'','width=600,height=500');
+			return true;
+		}
+		</script>
+	
+		<div id="WeatherWAPBlk">
+			<span><img src="http://image2.sina.com.cn/dy/weather/images/ntqyb/wheather_i_ws_012.gif" width="133" height="69" alt="WAP天气预报订阅" title="" onclick="javascript:op('wappush_all.cgi?sid=04101068&mes=新浪天气预报&fee=3&type=m&producttype=news')"/></span>
+			<span class="WeatherWAPBtn"><img src="http://image2.sina.com.cn/dy/weather/images/ntqyb/wheather_i_ws_013.gif" width="68" height="18" alt="立即订阅" title="" onclick="javascript:op('wappush_all.cgi?sid=04101068&mes=新浪天气预报&fee=3&type=m&producttype=news')"/></span>
+			<p>中央气象台重要无线合作伙伴中国移动GPRS用户发送qxt到18632订阅</p>
+		</div>
+	</div>
+	-->
+	<!-- WAP天气预报 end -->
+	
+</div>
+<!-- 测边栏 end -->
+<div class="clearit"></div>
+</div>
+
+<!-- footer begin -->
+<SCRIPT LANGUAGE="JavaScript" src="http://www.sinaimg.cn/dy/deco/2007/sinafooter.js"></SCRIPT>
+<!-- footer end -->
+</div>
+<!-- START WRating v1.0 -->
+<div style="display:none">
+<script type="text/javascript" src="http://sina.wrating.com/a1.js"></script>
+<script type="text/javascript">
+var vjAcc="860010-0327010000"; 
+var wrUrl="http://sina.wrating.com/"
+vjTrack("");
+</script>
+<noscript><img src="http://sina.wrating.com/a.gif?a=&c=860010-0327010000" width="1" height="1"/></noscript>
+</div>
+<!-- END WRating v1.0 -->
+<!-- START Nielsen//NetRatings SiteCensus V5.2 -->
+<!-- COPYRIGHT 2006 Nielsen//NetRatings -->
+<script type="text/javascript">
+	var _rsCI="cn-sina2006";	 
+	var _rsCG="0";	
+	var _rsDN="//secure-cn.imrworldwide.com/";	
+	var _rsCC=0;	
+	var _rsSE=1;	
+	var _rsSM=0.01;	 
+	var _rsSS=1500;	 
+</script>
+<script type="text/javascript" src="//secure-cn.imrworldwide.com/v52.js"></script>
+<noscript>
+	<img src="//secure-cn.imrworldwide.com/cgi-bin/m?ci=cn-sina2006&amp;cg=0" alt=""/>
+</noscript>
+<!-- END Nielsen//NetRatings SiteCensus V5.2 -->
+</body>
+</html>
+<!-- 2008-04-07 17:03:12 -->

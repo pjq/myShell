@@ -1,0 +1,3 @@
+#!/bin/sh
+sudo emerge -1tavO x11-drm libdrm xf86-video-ati xorg-server mesa
+

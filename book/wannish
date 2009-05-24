@@ -1,0 +1,18 @@
+#!/bin/bash
+
+rm $2.txt
+echo 
+echo "START"
+
+wget -r -l 1 -A "section_content.php*" -p -nd -q $1
+rm robots.txt
+cat section_content.php* >> $2.txt
+rm section_content.php*
+sed -i 's/<\/div>/<br \/>/g' $2.txt
+cat $2.txt | grep "<br />" >> $2
+mv $2 $2.txt
+
+sed -i '/class/d' $2.txt
+sed -i 's/<[^<]*>//g' $2.txt
+
+echo "END"

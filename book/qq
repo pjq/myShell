@@ -1,0 +1,24 @@
+#!/bin/bash
+
+rm $3.txt
+
+echo
+echo "START"
+
+i="1"
+M="$[$2+1]"
+
+while [ $i -lt $M ]
+do
+  echo "Downloading Chapter $i..."
+  wget -p -q -nd -A "*.shtml" $1/$i.shtml
+  cat ./$i.shtml | grep "<br /><br />" > $i.txt
+  sed -i 's/<[^<]*>//g' $i.txt
+  cat $i.txt >> $3.txt
+  echo >> $3.txt
+  rm $i.txt
+  rm $i.shtml
+  i=$[$i+1]
+done;
+
+echo "END"

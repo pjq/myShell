@@ -1,0 +1,2 @@
+#!/bin/bash
+find -maxdepth 1 -print0 | xargs -0 du -sh | egrep '^[^[:space:]]*M'

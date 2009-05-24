@@ -1,0 +1,16 @@
+#!/bin/bash
+rm $2.txt
+echo "START"
+
+wget -r -l 1 -A "*.htm" -p -q -nd $1
+cat *.htm >> $2.txt
+rm *.htm
+
+sed -i '/<[^<]*>/d' $2.txt
+sed -i '/--/d' $2.txt
+sed -i '/font/d' $2.txt
+sed -i '/color/d' $2.txt
+sed -i '/text/d' $2.txt
+sed -i '/page/d' $2.txt
+
+echo "END"

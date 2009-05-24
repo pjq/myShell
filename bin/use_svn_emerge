@@ -1,0 +1,2 @@
+export PYTHONPATH="/var/tmp/portage-source/pym:${PYTHONPATH}"
+export PATH="/var/tmp/portage-source/bin:${PATH}"

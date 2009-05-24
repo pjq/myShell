@@ -1,0 +1,9 @@
+#!/bin/bash
+if [[ $# -gt 0 ]]; then
+	while [[ $# -gt 0 ]]; do 
+		find $1 -maxdepth 1 | sed -e  "/\.svn/d"  -e "/profiles/d" -e "/eclass/d" -e "/distfile/d" -ne "/[^/]*\//p"
+		shift
+	done
+else
+	find -maxdepth 2 | sed -e  "/\.svn/d" -e "/profiles/d"  -e "/eclass/d" -e "/distfile/d" -ne "/\.\/[^/]*\//p"
+fi

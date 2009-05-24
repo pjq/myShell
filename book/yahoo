@@ -1,0 +1,18 @@
+#!/bin/bash
+
+rm $2.txt
+echo 
+echo "START"
+
+wget -r -l 1 -A "*.html" -p -q -nd $1
+cat *.html >> $2.txt
+rm *.html
+cat $2.txt | grep "<p>" >> $2
+mv $2 $2.txt
+
+sed -i 's/<p>//g' $2.txt
+sed -i '/<p\ /d' $2.txt
+sed -i 's/<[^<]*>//g' $2.txt
+sed -i '/\&nbsp;/d' $2.txt
+
+echo "END"

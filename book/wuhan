@@ -1,0 +1,36 @@
+#!/bin/bash
+
+rm $3.txt
+i="1"
+M="$[$2+1]"
+ten="10"
+
+echo
+echo "START"
+
+while [ $i -lt $M ]
+do
+  echo "Downloading Chapter $i..."
+  if [ $i -lt $ten ]
+  then
+     wget -p -q -nd -A "*.htm" $1/0$i.htm 
+     cat ./0$i.htm | grep "<p>" > $i.txt
+     rm 0$i.htm
+  else
+     wget -p -q -nd -A "*.htm" $1/$i.htm
+     cat ./$i.htm | grep "<p>" > $i.txt
+     rm $i.htm
+  fi
+
+  sed -i '/\&nbsp;/d' $i.txt
+  sed -i 's/<p>//g' $i.txt
+  sed -i 's/<\/p>/\
+/g' $i.txt
+  sed -i 's/<[^<]*>//g' $i.txt
+  sed -i 's/^[[:space:]]*//g' $i.txt
+  cat $i.txt >> $3.txt
+  rm $i.txt
+  i=$[$i+1]
+done;
+
+echo "BYEBYE"

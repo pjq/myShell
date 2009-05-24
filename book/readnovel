@@ -1,0 +1,30 @@
+#!/bin/bash
+
+rm $3.txt
+
+echo
+echo "START"
+
+i="1"
+M="$[$2+1]"
+
+while [ $i -lt $M ]
+do
+  echo "Downloading Chapter $i..."
+  wget --header="User-Agent: Mozilla/4.0" -A "*.html" -p -q -nd $1/$i.html
+  cat ./$i.html | grep "<P>" > $i.txt
+  sed -i 's/<P>//g' $i.txt
+  sed -i 's/<\/P>/\
+  /g' $i.txt
+  sed -i 's/<BR>//g' $i.txt
+  sed -i 's/<[^<]*>//g' $i.txt
+  sed -i '/[:space:][^C]*/d' $i.txt
+  sed -i 's/^[[:space:]]*//g' $i.txt
+  cat $i.txt >> $3.txt
+  rm $i.txt
+  rm $i.html
+  rm leftads4.html
+  i=$[$i+1]
+done;
+
+echo "END"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "FEATURES=\"keepwork nostrip splitdebug installsources\" CFLAGS=\"-march=native -pipe -g3 -ggdb3 -gdwarf-2\" CXXFLAGS=\"-march=native -pipe -g3 -ggdb3 -gdwarf-2\" USE=\"debug ${USE}\" sudo emerge -1av $@"
+
+FEATURES="keepwork nostrip splitdebug installsources" CFLAGS="-march=native -pipe -g3 -ggdb3 -gdwarf-2" CXXFLAGS="-march=native -pipe -g3 -ggdb3 -gdwarf-2" USE="debug ${USE}" sudo emerge -1av $@

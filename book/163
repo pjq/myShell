@@ -1,0 +1,18 @@
+#!/bin/bash
+
+rm $2.txt
+
+echo
+echo "START"
+
+wget -r -l 1 -A "*24.html" -p -q -nd $1
+rm special.html
+cat *.html | grep "<P style" >> $2.txt
+rm *.html
+
+sed -i 's/<\/P>/\
+/g' $2.txt
+sed -i 's/<[^<]*>//g' $2.txt
+
+
+echo "END"

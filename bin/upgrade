@@ -1,0 +1,37 @@
+#!/bin/bash
+
+cflag= 		# cronjob
+oflag= 		# only upgrade, do not sync
+vflag= 		# verbose
+
+while getopts cov opt
+do
+    case "$opt" in
+      c)  cflag=1;;
+      o)  oflag=1;;
+      v)  vflag=1;;
+      \?) 
+      	  echo >&2 "usage: $(basename $0) [-c|-o|-v] "
+	  exit 1;;
+    esac
+done
+shift `expr $OPTIND - 1`
+
+if [[ -z $oflag ]]
+then
+    sudo layman -S && sudo eix-sync 
+fi
+
+eflag="--keep-going -tvuDN"
+
+if [[ -z $cflag ]]
+then
+    eflag="$eflag -a"
+fi
+
+if [[ -z $vflag ]]
+then
+    eflag="$eflag -q"
+fi
+
+sudo emerge $eflag world 

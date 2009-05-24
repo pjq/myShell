@@ -1,0 +1,13 @@
+#!/bin/sh
+KBUILD_OUTPUT=/var/tmp/kernel_build
+cd ${KBUILD_OUTPUT}
+make -C /usr/src/linux O=${KBUILD_OUTPUT} menuconfig
+echo -n "go on to make? [Y/n]:"
+read yes
+if [[ "x$yes" == xy || "x$yes" == x ]]
+then
+	if grep '/boot' /etc/fstab && ! grep '/boot' /etc/mtab; then
+		sudo mount /boot
+	fi
+	make && sudo sh -c "make install && make modules_install && umount /boot"
+fi

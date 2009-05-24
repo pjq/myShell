@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo tar jpcvf backup.tar.bz2 --exclude /proc --exclude /sys --exclude /dev --exclude /usr/portage --exclude /var/tmp --exclude /usr/src  --exclude /mnt/ --exclude /var/run  --exclude /var/spool /

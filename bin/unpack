@@ -1,0 +1,75 @@
+#!/bin/bash
+
+filename=
+pkg=
+pflag=off
+fflag=off
+vflag=off
+
+while getopts vp:f: opt
+do
+    case "$opt" in
+      f)  fflag=on;filename="$OPTARG";;
+      p)  pflag=on;pkg="$OPTARG";;
+      v)  vflag=on;;
+      \?) 
+      	  echo >&2 "usage: $(basename $0) [-v] [-f filename | -p package]"
+	  exit 1;;
+    esac
+done
+shift `expr $OPTIND - 1`
+
+if [[ $fflag == off && $pflag == off ]]
+then
+	echo >&2 "usage: $(basename $0) [-v] [-f filename | -p package]"
+	exit 1
+elif [[ $fflag == on && $pflag == on ]]
+then
+	echo >&2 "error: can't specify -p and -f at the same time"
+	exit 1
+elif [[ $fflag == on ]]
+then
+	export PS3="which one to unpack? "
+	if qfile $filename >/dev/null 2>&1; then
+		pkgs=$(qfile -C $filename | cut -d " " -f 1 | sort -u | tr \\n " ")
+		select pkg in $pkgs
+		do
+			break
+		done
+	else 
+		echo >&2 "error: file \"$filename\" doesn't exists"
+		exit 1
+	fi
+elif [[ $pflag == on ]]
+then
+	:
+fi
+
+if [[ $vflag == on ]]
+then
+	UNPACK_OUTPUT_REDIRECT=""
+else
+	UNPACK_OUTPUT_REDIRECT=">/dev/null 2>&1"
+fi
+
+echo "unpacking $pkg"
+EBUILD=$(equery w "$pkg")
+
+if [ -z $EBUILD ]
+then
+	echo "ebuild for $pkg not found"
+	exit 1
+else
+	echo "found ebuild: $EBUILD"
+fi
+
+WORKDIR=$(sed -re 's#/.*/.*/(.*)/(.*)/(.*).ebuild#/var/tmp/portage/\1/\3#' <<< ${EBUILD})
+
+if [ -d $WORKDIR ]
+then
+	echo "${WORKDIR} exists, will be deleted"
+	sudo rm -rf $WORKDIR
+fi
+
+sh -c "ebuild $EBUILD unpack $UNPACK_OUTPUT_REDIRECT"
+echo "unpacked to $WORKDIR"

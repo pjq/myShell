@@ -1,0 +1,23 @@
+#!/bin/bash
+
+rm $2.txt
+
+echo
+echo "START"
+
+wget -r -l 1 -A "*.html" -p -q -nd $1
+cat *.html >> $2.txt
+rm robots.txt
+rm robots.txt.*
+rm *.html
+
+sed -i '/</d' $2.txt
+sed -i '/\&nbsp;/d' $2.txt
+sed -i '/initializeimg/d' $2.txt
+sed -i '/{/d' $2.txt
+sed -i '/>/d' $2.txt
+sed -i '/}/d' $2.txt
+sed -i '/var/d' $2.txt
+
+
+echo "END"

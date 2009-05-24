@@ -1,0 +1,23 @@
+YTCMSC01      AMA112 MAR07 15:19:01 2900 INFO LONG DURATION CALL
+           ORIG= CDMA_CPS 000000
+           TERM=
+           CLG NO= 13355356234
+           CLD NO=                              $
+           CONNECT TIME= 066/1426170  REPORT COUNT= 22986
+           ANSWERED= Y
+
+YTCMSC01      AMA112 MAR07 15:19:01 2800 INFO LONG DURATION CALL
+           ORIG= CKT     YTIGW1TRKE  477
+           TERM= CKT    SB0014VOICE  121
+           CLG NO= 13854829695
+           CLD NO=                    13361321136
+           CONNECT TIME= 066/1435147  REPORT COUNT= 22985
+           ANSWERED= Y
+
+YTCMSC01      AMA112 MAR07 15:19:01 2700 INFO LONG DURATION CALL
+           ORIG= CDMA_CPS 000000
+           TERM=
+           CLG NO= 13356916813
+           CLD NO=                              $
+           CONNECT TIME= 066/0849074  REPORT COUNT= 22984
+           ANSWERED= Y 
